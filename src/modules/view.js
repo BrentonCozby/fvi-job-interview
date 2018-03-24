@@ -10,18 +10,17 @@ const TodoView = ({
 }) => (
     <div className="lists-wrapper">
         <section className="TodoList">
-            <h2>ToDo</h2>
-
-            <div>
-                <button onClick={addTodo}>New Todo</button>
-            </div>
+            <h2>
+                ToDo
+                <button onClick={addTodo} className="add-button">Add ToDo</button>
+            </h2>
             
             <ul>
                 {todoList.map((todo, index) => (
                     <li key={todo.id}>
                         {todo.text}
                         &nbsp;
-                        <span class="inline-button" onClick={() => markDone(todo, index)}>✔</span>
+                        <span className="inline-button" onClick={() => markDone(todo, index)}>✔</span>
                     </li>
                 ))}
             </ul>
@@ -35,7 +34,7 @@ const TodoView = ({
                     <li key={todo.id}>
                         {todo.text}
                         &nbsp;
-                        <span class="inline-button" onClick={() => deleteForever(index)}>×</span>
+                        <span className="inline-button" onClick={() => deleteForever(index)}>×</span>
                     </li>
                 ))}
             </ul>

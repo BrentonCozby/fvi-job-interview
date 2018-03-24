@@ -8,6 +8,7 @@
   height: 150px;
   padding: 20px;
   color: white;
+  text-align: center;
 }
 
 .App-title {
@@ -41,6 +42,17 @@
 .TodoList li,
 .DoneList li {
   margin: 15px 0;
+}
+
+.add-button {
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #eee;
+  margin-top: -5px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .inline-button {
